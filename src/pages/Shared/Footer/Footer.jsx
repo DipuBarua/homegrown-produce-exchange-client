@@ -29,11 +29,11 @@ const Footer = () => {
                 </nav>
             </footer>
             <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
-                <aside className="items-center grid-flow-col">
-                    <img className=" w-1/2" src={img} alt="" />
-                </aside>
+                <img className=" w-1/2" src={img} alt="" />
+                <p className="">All &copy;copy rights are reserved by Homegrown Produce Exchange authority.</p>
+
                 <nav className="md:place-self-center md:justify-self-end">
-                    <div className="grid grid-flow-col gap-4 px-10">
+                    <div className="grid grid-flow-col gap-4">
                         <FaXTwitter className=" text-2xl"></FaXTwitter>
                         <FaFacebookF className=" text-2xl text-blue-600"></FaFacebookF>
                         <FaYoutube className=" text-2xl text-red-600"></FaYoutube>
