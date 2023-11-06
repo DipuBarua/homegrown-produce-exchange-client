@@ -4,8 +4,7 @@ import Footer from "../pages/Shared/Footer/Footer";
 
 const Root = () => {
     return (
-        <div>
-            <p className=" text-4xl font-bold text-center">THis is Root of all routes</p>
+        <div className=" container mx-auto">
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>
