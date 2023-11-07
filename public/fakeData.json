@@ -1,0 +1,182 @@
+[
+    {
+        "image": "image_url_1.jpg",
+        "name": "Organic Tomatoes",
+        "description": "Fresh, locally grown organic tomatoes.",
+        "area": "Local Farm A",
+        "price": 2.99,
+        "provider_img": "provider_image_1.jpg",
+        "provider_name": "Farmers Market Co."
+    },
+    {
+        "image": "image_url_2.jpg",
+        "name": "Apples",
+        "description": "Crispy and delicious apples from our orchard.",
+        "area": "Orchard Delights",
+        "price": 1.49,
+        "provider_img": "provider_image_2.jpg",
+        "provider_name": "Fruit Haven"
+    },
+    {
+        "image": "image_url_3.jpg",
+        "name": "Fresh Eggs",
+        "description": "Farm-fresh eggs from free-range chickens.",
+        "area": "Sunrise Farms",
+        "price": 3.99,
+        "provider_img": "provider_image_3.jpg",
+        "provider_name": "Eggcellent Farms"
+    },
+    {
+        "image": "image_url_4.jpg",
+        "name": "Carrots",
+        "description": "Sweet and crunchy carrots, perfect for snacking.",
+        "area": "Local Farm B",
+        "price": 1.29,
+        "provider_img": "provider_image_4.jpg",
+        "provider_name": "Harvest Fresh"
+    },
+    {
+        "image": "image_url_5.jpg",
+        "name": "Honey",
+        "description": "Pure, raw honey from our bee hives.",
+        "area": "Beekeepers Co.",
+        "price": 5.99,
+        "provider_img": "provider_image_5.jpg",
+        "provider_name": "Golden Nectar"
+    },
+    {
+        "image": "image_url_6.jpg",
+        "name": "Spinach",
+        "description": "Organic spinach, handpicked for freshness.",
+        "area": "Green Valley Farms",
+        "price": 2.49,
+        "provider_img": "provider_image_6.jpg",
+        "provider_name": "Leafy Greens Co."
+    },
+    {
+        "image": "image_url_7.jpg",
+        "name": "Strawberries",
+        "description": "Sweet and juicy strawberries, great for desserts.",
+        "area": "Berry Fields",
+        "price": 3.79,
+        "provider_img": "provider_image_7.jpg",
+        "provider_name": "Berry Bliss Farms"
+    },
+    {
+        "image": "image_url_8.jpg",
+        "name": "Cucumbers",
+        "description": "Crisp cucumbers, perfect for salads and pickling.",
+        "area": "Local Farm C",
+        "price": 1.99,
+        "provider_img": "provider_image_8.jpg",
+        "provider_name": "Crispy Veggies"
+    },
+    {
+        "image": "image_url_9.jpg",
+        "name": "Blueberries",
+        "description": "Plump and flavorful blueberries, rich in antioxidants.",
+        "area": "Blueberry Grove",
+        "price": 4.29,
+        "provider_img": "provider_image_9.jpg",
+        "provider_name": "Berry Delights"
+    },
+    {
+        "image": "image_url_10.jpg",
+        "name": "Fresh Herbs",
+        "description": "Assorted fresh herbs, perfect for culinary use.",
+        "area": "Herb Garden Co.",
+        "price": 1.79,
+        "provider_img": "provider_image_10.jpg",
+        "provider_name": "Herbalicious"
+    },
+    {
+        "image": "image_url_11.jpg",
+        "name": "Zucchini",
+        "description": "Tender zucchinis, great for roasting or grilling.",
+        "area": "Local Farm D",
+        "price": 1.69,
+        "provider_img": "provider_image_11.jpg",
+        "provider_name": "Green Harvest"
+    },
+    {
+        "image": "image_url_12.jpg",
+        "name": "Potatoes",
+        "description": "Freshly dug potatoes, ideal for mashing or frying.",
+        "area": "Tater Town Farms",
+        "price": 2.19,
+        "provider_img": "provider_image_12.jpg",
+        "provider_name": "Spudtacular"
+    },
+    {
+        "image": "image_url_13.jpg",
+        "name": "Homemade Jams",
+        "description": "Assorted homemade jams, made with love.",
+        "area": "Jammin' Kitchen",
+        "price": 3.49,
+        "provider_img": "provider_image_13.jpg",
+        "provider_name": "Jammin' Goodness"
+    },
+    {
+        "image": "image_url_14.jpg",
+        "name": "Peppers",
+        "description": "Colorful and spicy peppers, great for cooking.",
+        "area": "Local Farm E",
+        "price": 1.89,
+        "provider_img": "provider_image_14.jpg",
+        "provider_name": "Pepper Paradise"
+    },
+    {
+        "image": "image_url_15.jpg",
+        "name": "Fresh Bread",
+        "description": "Homemade bread, baked daily with the finest ingredients.",
+        "area": "Baker's Haven",
+        "price": 4.99,
+        "provider_img": "provider_image_15.jpg",
+        "provider_name": "Bread Bliss"
+    },
+    {
+        "image": "image_url_16.jpg",
+        "name": "Pumpkins",
+        "description": "Seasonal pumpkins for carving and decorating.",
+        "area": "Local Farm F",
+        "price": 2.79,
+        "provider_img": "provider_image_16.jpg",
+        "provider_name": "Pumpkin Patch"
+    },
+    {
+        "image": "image_url_17.jpg",
+        "name": "Fresh Fish",
+        "description": "Local, sustainably caught fish for seafood lovers.",
+        "area": "Fisherman's Catch",
+        "price": 6.99,
+        "provider_img": "provider_image_17.jpg",
+        "provider_name": "Seafood Delights"
+    },
+    {
+        "image": "image_url_18.jpg",
+        "name": "Honeydew Melons",
+        "description": "Sweet and refreshing honeydew melons for summer enjoyment.",
+        "area": "Melon Meadow",
+        "price": 2.49,
+        "provider_img": "provider_image_18.jpg",
+        "provider_name": "Melon Magic"
+    },
+    {
+        "image": "image_url_19.jpg",
+        "name": "Fresh Flowers",
+        "description": "Vibrant, locally grown flowers to brighten your day.",
+        "area": "Blooming Gardens",
+        "price": 4.49,
+        "provider_img": "provider_image_19.jpg",
+        "provider_name": "Floral Delights"
+    },
+    {
+        "image": "image_url_20.jpg",
+        "name": "Homemade Preserves",
+        "description": "Delicious homemade preserves in a variety of flavors.",
+        "area": "Preserve Paradise",
+        "price": 3.29,
+        "provider_img": "provider_image_20.jpg",
+        "provider_name": "Jam Masters"
+    }
+]
