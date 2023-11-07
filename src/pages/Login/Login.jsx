@@ -1,12 +1,14 @@
 import { useContext } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contextProviders/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FcGoogle } from 'react-icons/fc';
 
 const Login = () => {
-    const { logIn } = useContext(AuthContext);
+    const { logIn, googleLogIn } = useContext(AuthContext);
     const location = useLocation();
+    const navigate = useNavigate();
     console.log(location.state);
 
     const handleLogin = (e) => {
@@ -22,16 +24,30 @@ const Login = () => {
         logIn(email, password)
             .then(result => {
                 console.log(result.user);
-                alert();
+                navigate(location?.state ? location?.state : "/");
             })
             .catch(error => {
                 console.log(error);
+                alert();
             })
 
     }
 
+    // google Login 
+    const handleGoogleLogin = () => {
+        googleLogIn()
+            .then(result => {
+                console.log(result.user);
+                navigate(location?.state ? location?.state : "/");
+            })
+            .catch(err => {
+                console.log(err);
+                alert();
+            })
+    }
+
     const alert = () => {
-        toast('Login Successful');
+        toast('Wrong Try');
     }
 
     return (
@@ -58,9 +74,14 @@ const Login = () => {
                             </label>
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-outline btn-warning">Login</button>
+                            <button className="btn btn-outline btn-warning rounded-none">Login</button>
                         </div>
-                        <div>
+
+                        <div className=" border border-black p-2 flex justify-center">
+                            <button onClick={handleGoogleLogin} className="text-3xl"><FcGoogle></FcGoogle></button>
+                        </div>
+
+                        <div className=" border border-black p-2">
                             <p>Have an account? if no, please <Link to={'/register'}><button className="btn-link font-semibold text-orange-600">Sign Up</button></Link></p>
                         </div>
                     </form>
