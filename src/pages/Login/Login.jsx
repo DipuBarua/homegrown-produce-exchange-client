@@ -1,9 +1,13 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { AuthContext } from "../../contextProviders/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const { logIn } = useContext(AuthContext);
+    const location = useLocation();
+    console.log(location.state);
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -13,10 +17,12 @@ const Login = () => {
         const currentUser = { email, password };
         console.log(currentUser);
 
+
         // log in -- Auth 
         logIn(email, password)
             .then(result => {
                 console.log(result.user);
+                alert();
             })
             .catch(error => {
                 console.log(error);
@@ -24,8 +30,13 @@ const Login = () => {
 
     }
 
+    const alert = () => {
+        toast('Login Successful');
+    }
+
     return (
         <div className="hero min-h-screen bg-base-100">
+            <ToastContainer></ToastContainer>
             <div className="hero-content flex flex-col md:flex-row gap-10">
                 <img src={''} alt="" />
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
