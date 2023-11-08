@@ -20,18 +20,27 @@ const Navbar = () => {
     const navLinks = <>
         <li><Link to={'/'}>Home</Link></li>
         <li><Link to={'/services'}>Services</Link></li>
-        <li><Link to={'/addService'}>addService</Link></li>
+        {
+            user?.email ?
+                <li><Link to={'/addService'}>addService</Link></li>
+                :
+                <li><Link to={'/register'}>Register</Link></li>
+        }
+
     </>
 
     const dropDownLink = <>
-        <details>
-            <summary>Dashboard</summary>
-            <ul className="p-2">
-                <li><Link to={'/'}>My-services</Link></li>
-                <li><Link to={'/addService'}>Add-services</Link></li>
-                <li><Link to={'/'}>My-schedules</Link></li>
-            </ul>
-        </details>
+        {
+            user?.email && <details>
+                <summary>Dashboard</summary>
+                <ul className="p-2">
+                    <li><Link to={'/addService'}>Add-services</Link></li>
+                    <li><Link to={'/'}>My-services</Link></li>
+                    <li><Link to={'/'}>My-schedules</Link></li>
+                </ul>
+            </details>
+        }
+
     </>
 
     return (

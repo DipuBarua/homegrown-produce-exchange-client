@@ -18,7 +18,7 @@ const routes = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                loader: () => fetch('http://localhost:5000/products')
+                loader: () => fetch('https://homegrown-produce-exchange-server-a11b8.vercel.app/products')
             },
             {
                 path: "/register",
@@ -34,12 +34,12 @@ const routes = createBrowserRouter([
             },
             {
                 path: "/serviceDetails/:id",
-                element: <ServiceDetails></ServiceDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
+                element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
+                loader: ({ params }) => fetch(`https://homegrown-produce-exchange-server-a11b8.vercel.app/products/${params.id}`)
             },
             {
                 path: "/addService",
-                element: <AddService></AddService>
+                element: <PrivateRoute><AddService></AddService></PrivateRoute>
             }
         ]
     },

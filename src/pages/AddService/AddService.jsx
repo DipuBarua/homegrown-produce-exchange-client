@@ -28,7 +28,7 @@ const AddService = () => {
 
         console.log(newService);
 
-        fetch('http://localhost:5000/products', {
+        fetch('https://homegrown-produce-exchange-server-a11b8.vercel.app/products', {
             method: "POST",
             headers: {
                 'content-type': "application/json"

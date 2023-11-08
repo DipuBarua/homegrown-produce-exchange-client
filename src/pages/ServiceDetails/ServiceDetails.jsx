@@ -30,7 +30,7 @@ const ServiceDetails = () => {
         }
         console.log(booking);
 
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://homegrown-produce-exchange-server-a11b8.vercel.app/bookings', {
             method: "POST",
             headers: {
                 'content-type': "application/json"
