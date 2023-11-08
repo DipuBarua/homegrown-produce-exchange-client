@@ -9,7 +9,7 @@ const ServiceDetails = () => {
     console.log(user);
     const loadedService = useLoaderData();
     console.log(loadedService);
-    const { image, name, description, area, price, provider_img, provider_name, _id } = loadedService;
+    const { image, name, description, area, price, provider_img, provider_name, } = loadedService;
 
     const handleBookNow = e => {
         e.preventDefault();
