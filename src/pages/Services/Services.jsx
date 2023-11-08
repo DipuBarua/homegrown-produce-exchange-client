@@ -31,7 +31,7 @@ const Services = () => {
                 }
             </div>
             <div className=" text-center my-10">
-            <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">Show All</button>
+                <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">Show All</button>
             </div>
         </div>
     );
