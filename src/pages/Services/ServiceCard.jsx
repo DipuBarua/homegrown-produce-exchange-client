@@ -1,4 +1,5 @@
 import { MdLocationOff } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 const ServiceCard = ({ service }) => {
     const { image, name, description, area, price, provider_img, provider_name, _id } = service;
@@ -11,7 +12,7 @@ const ServiceCard = ({ service }) => {
                     <p>{description}</p>
                     <div className=' my-1 flex items-center'>
                         <MdLocationOff></MdLocationOff>
-                        <span>{area}</span> 
+                        <span>{area}</span>
                     </div>
 
                     <p>Price: ${price}</p>
@@ -23,7 +24,7 @@ const ServiceCard = ({ service }) => {
                         </div>
                         <p className=" text-sm">{provider_name}</p>
                     </div>
-                    <button className="btn btn-accent btn-outline">Details</button>
+                    <Link to={`/serviceDetails/${_id}`} className="btn btn-accent btn-outline">Details</Link>
                 </div>
             </div>
         </div>
