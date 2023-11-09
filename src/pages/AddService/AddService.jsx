@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../../contextProviders/AuthProvider";
+import Swal from "sweetalert2";
 
 const AddService = () => {
     const { user } = useContext(AuthContext);
@@ -7,18 +8,18 @@ const AddService = () => {
     const handleAddService = (e) => {
         e.preventDefault();
         const form = e.target;
-        const photo = form.photo.value;
-        const service = form.service_name.value;
-        const user_name = form.user_name.value;
+        const image = form.image.value;
+        const name = form.name.value;
+        const provider_name = form.provider_name.value;
         const email = form.email.value;
         const price = form.price.value;
         const area = form.area.value;
         const description = form.description.value;
         const provider_img = form.provider_img.value;
         const newService = {
-            photo,
-            service,
-            user_name,
+            image,
+            name,
+            provider_name,
             email,
             price,
             area,
@@ -38,6 +39,14 @@ const AddService = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
+
+                if (data.insertedId) {
+                    Swal.fire({
+                        title: "Successfully Added",
+                        text: "Your product/service has added successfully.",
+                        icon: "success"
+                    });
+                }
             })
 
     }
@@ -53,21 +62,21 @@ const AddService = () => {
                                 <span className="label-text">Photo url
                                 </span>
                             </label>
-                            <input type="url" name="photo" defaultValue={''} placeholder="Picture URL of the Service" className="input input-bordered" required />
+                            <input type="url" name="image" defaultValue={''} placeholder="Picture URL of the Service" className="input input-bordered" required />
                         </div>
 
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Service</span>
                             </label>
-                            <input type="text" name="service_name" defaultValue={''} placeholder=" Service Name" className="input input-bordered" required />
+                            <input type="text" name="name" defaultValue={''} placeholder=" Service Name" className="input input-bordered" required />
                         </div>
 
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Your name</span>
                             </label>
-                            <input type="text" name="user_name" placeholder="Provier email" defaultValue={user?.displayName} className="input input-bordered" readOnly />
+                            <input type="text" name="provider_name" placeholder="Provier name" defaultValue={user?.displayName} className="input input-bordered" readOnly />
                         </div>
 
                         <div className="form-control">

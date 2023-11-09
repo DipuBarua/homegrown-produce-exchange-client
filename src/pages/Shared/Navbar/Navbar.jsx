@@ -22,7 +22,10 @@ const Navbar = () => {
         <li><Link to={'/services'}>Services</Link></li>
         {
             user?.email ?
-                <li><Link to={'/addService'}>addService</Link></li>
+                <>
+                    <li><Link to={'/addService'}>addService</Link></li>
+                    <li><Link to={'/manageServices'}>Manage Services</Link></li>
+                </>
                 :
                 <li><Link to={'/register'}>Register</Link></li>
         }
@@ -35,7 +38,7 @@ const Navbar = () => {
                 <summary>Dashboard</summary>
                 <ul className="p-2">
                     <li><Link to={'/addService'}>Add-services</Link></li>
-                    <li><Link to={'/'}>My-services</Link></li>
+                    <li><Link to={'/'}>Manage-Services</Link></li>
                     <li><Link to={'/'}>My-schedules</Link></li>
                 </ul>
             </details>
